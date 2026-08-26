@@ -1,0 +1,149 @@
+.movie-details-page {
+  min-height: 100vh;
+  padding: 120px 7% 60px;
+  background: #0d0e14;
+  color: #ffffff;
+}
+
+.movie-details-card {
+  max-width: 1100px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  gap: 50px;
+  padding: 30px;
+  background: #171820;
+  border: 1px solid #292b36;
+  border-radius: 16px;
+}
+
+.movie-details-poster img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.movie-details-content {
+  align-self: center;
+}
+
+.details-label {
+  margin-bottom: 10px;
+  color: #ff3b64;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.movie-details-content h1 {
+  margin: 0 0 15px;
+  font-size: 42px;
+}
+
+.details-rating {
+  display: inline-block;
+  padding: 7px 12px;
+  background: #08090d;
+  border-radius: 20px;
+  color: #ffffff;
+}
+
+.details-genre {
+  margin: 20px 0 10px;
+  color: #a1a3ae;
+}
+
+.details-meta {
+  display: flex;
+  gap: 25px;
+  margin: 20px 0;
+  color: #a1a3ae;
+  font-size: 14px;
+}
+
+.details-description {
+  max-width: 600px;
+  color: #9b9da8;
+  line-height: 1.7;
+}
+
+.details-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.book-button,
+.back-button {
+  padding: 12px 22px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.book-button {
+  background: #ff3b64;
+  color: #ffffff;
+}
+
+.back-button {
+  border: 1px solid #343641;
+  color: #ffffff;
+}
+
+.book-button:hover {
+  background: #e72f56;
+}
+
+.back-button:hover {
+  border-color: #ff3b64;
+}
+
+.movie-not-found {
+  min-height: 100vh;
+  padding-top: 150px;
+  text-align: center;
+  background: #0d0e14;
+  color: #ffffff;
+}
+
+.movie-not-found a {
+  color: #ff3b64;
+}
+
+@media (max-width: 768px) {
+  .movie-details-page {
+    padding: 100px 20px 40px;
+  }
+
+  .movie-details-card {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+  }
+
+  .movie-details-poster img {
+    height: 450px;
+  }
+
+  .movie-details-content h1 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .movie-details-poster img {
+    height: 400px;
+  }
+
+  .details-actions {
+    flex-direction: column;
+  }
+
+  .book-button,
+  .back-button {
+    text-align: center;
+  }
+}

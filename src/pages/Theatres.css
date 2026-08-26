@@ -1,0 +1,255 @@
+/* =========================
+   THEATRES PAGE
+========================= */
+
+.theatres-page {
+  min-height: 100vh;
+  padding: 110px 7% 60px;
+  background: #0d0e14;
+  color: #ffffff;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.theatres-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.theatres-header p {
+  margin: 0 0 10px;
+  color: #ff3b64;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.theatres-header h1 {
+  margin: 0;
+  font-size: 42px;
+  font-weight: 800;
+}
+
+.theatres-header span {
+  display: block;
+  margin-top: 12px;
+  color: #999ba6;
+  font-size: 15px;
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.theatres-container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+
+/* =========================
+   THEATRE GRID
+========================= */
+
+.theatre-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px;
+}
+
+
+/* =========================
+   THEATRE CARD
+========================= */
+
+.theatre-card {
+  display: flex;
+  gap: 20px;
+  padding: 25px;
+  background: #171820;
+  border: 1px solid #292b36;
+  border-radius: 15px;
+  transition:
+    transform 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.theatre-card:hover {
+  transform: translateY(-6px);
+  border-color: #ff3b64;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.35);
+}
+
+
+/* =========================
+   ICON
+========================= */
+
+.theatre-icon {
+  flex-shrink: 0;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #0d0e14;
+  border: 1px solid #30323d;
+  border-radius: 12px;
+  font-size: 25px;
+}
+
+
+/* =========================
+   CONTENT
+========================= */
+
+.theatre-content {
+  flex: 1;
+}
+
+.theatre-label {
+  margin: 0 0 7px;
+  color: #ff3b64;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.theatre-content h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.theatre-location {
+  margin: 0;
+  color: #999ba6;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+
+/* =========================
+   META
+========================= */
+
+.theatre-meta {
+  display: flex;
+  margin-top: 15px;
+}
+
+.theatre-meta span {
+  color: #d7d8df;
+  font-size: 12px;
+}
+
+
+/* =========================
+   FACILITIES
+========================= */
+
+.theatre-facilities {
+  margin: 15px 0;
+  color: #777a86;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+
+/* =========================
+   BUTTON
+========================= */
+
+.theatre-button {
+  width: 100%;
+  padding: 11px;
+  background: transparent;
+  border: 1px solid #343641;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.theatre-button:hover {
+  background: #ff3b64;
+  border-color: #ff3b64;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+  .theatres-page {
+    padding: 100px 4% 50px;
+  }
+
+  .theatre-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .theatres-page {
+    padding: 90px 20px 40px;
+  }
+
+  .theatres-header h1 {
+    font-size: 34px;
+  }
+
+  .theatres-header span {
+    font-size: 13px;
+  }
+
+  .theatre-card {
+    padding: 20px;
+  }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+@media (max-width: 480px) {
+
+  .theatres-page {
+    padding: 80px 15px 35px;
+  }
+
+  .theatres-header h1 {
+    font-size: 30px;
+  }
+
+  .theatre-card {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .theatre-icon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .theatre-content h2 {
+    font-size: 20px;
+  }
+}

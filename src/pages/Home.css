@@ -1,0 +1,368 @@
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  width: 100%;
+  height: 70px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+
+  background: #171922;
+  border-bottom: 1px solid #292c38;
+
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  color: #a9acb8;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  color: #ff3b5c;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  min-height: 550px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 70px 8%;
+
+  background:
+    radial-gradient(
+      circle at 80% 40%,
+      #4b1827,
+      transparent 40%
+    ),
+    #0f1117;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero-tag {
+  color: #ff3b5c;
+  font-size: 13px;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  line-height: 1.05;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #ff3b5c;
+}
+
+.hero-description {
+  color: #a9acb8;
+  line-height: 1.7;
+  max-width: 520px;
+  margin-bottom: 30px;
+}
+
+.hero-btn {
+  display: inline-block;
+
+  padding: 14px 28px;
+
+  background: #ff3b5c;
+  color: white;
+
+  border-radius: 30px;
+
+  font-weight: bold;
+
+  transition: 0.3s;
+}
+
+.hero-btn:hover {
+  transform: translateY(-3px);
+}
+
+
+/* =========================
+   MOVIES
+========================= */
+
+.movies-section {
+  padding: 70px 8%;
+}
+
+.section-title {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+
+  margin-bottom: 35px;
+}
+
+.section-title p {
+  color: #ff3b5c;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin-bottom: 8px;
+}
+
+.section-title h2 {
+  font-size: 34px;
+}
+
+.section-title a {
+  color: #aaa;
+}
+
+
+/* =========================
+   MOVIE GRID
+========================= */
+
+.movie-grid {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+
+  gap: 25px;
+}
+
+.movie-card {
+  background: #171922;
+
+  border: 1px solid #272a35;
+
+  border-radius: 14px;
+
+  overflow: hidden;
+
+  transition: 0.3s;
+}
+
+.movie-card:hover {
+  transform: translateY(-8px);
+  border-color: #ff3b5c;
+}
+
+.movie-image {
+  height: 330px;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.movie-image img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  display: block;
+}
+
+.rating {
+  position: absolute;
+
+  top: 12px;
+  right: 12px;
+
+  background: rgba(0, 0, 0, 0.75);
+
+  padding: 7px 10px;
+
+  border-radius: 20px;
+
+  font-size: 12px;
+}
+
+.movie-content {
+  padding: 18px;
+}
+
+.movie-content h3 {
+  margin-bottom: 7px;
+}
+
+.movie-content p {
+  color: #888;
+
+  font-size: 13px;
+
+  margin-bottom: 15px;
+}
+
+.movie-meta {
+  display: flex;
+  justify-content: space-between;
+
+  color: #aaa;
+
+  font-size: 12px;
+
+  margin-bottom: 18px;
+}
+
+.book-btn {
+  display: block;
+
+  text-align: center;
+
+  padding: 10px;
+
+  border: 1px solid #333;
+
+  border-radius: 8px;
+
+  color: white;
+
+  transition: 0.3s;
+}
+
+.book-btn:hover {
+  background: #ff3b5c;
+  border-color: #ff3b5c;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 1000px) {
+
+  .movie-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hero h1 {
+    font-size: 52px;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    padding: 60px 7%;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .movies-section {
+    padding: 50px 7%;
+  }
+
+  .movie-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* =========================
+   HOME SEARCH
+========================= */
+
+.home-search {
+  width: 100%;
+  max-width: 500px;
+  margin: 25px 0;
+}
+
+.home-search input {
+  width: 100%;
+  box-sizing: border-box;
+
+  padding: 14px 18px;
+
+  background: rgba(15, 16, 23, 0.9);
+  border: 1px solid #30323d;
+  border-radius: 10px;
+
+  color: #ffffff;
+  font-size: 14px;
+
+  outline: none;
+  transition: 0.3s ease;
+}
+
+.home-search input::placeholder {
+  color: #777a86;
+}
+
+.home-search input:focus {
+  border-color: #ff3b64;
+}
+
+
+/* =========================
+   NO MOVIES
+========================= */
+
+.no-movies {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.no-movies h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.no-movies p {
+  color: #777a86;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+  .home-search {
+    max-width: 100%;
+  }
+
+  .home-search input {
+    padding: 12px 15px;
+  }
+
+}
