@@ -84,6 +84,21 @@ select {
 
 
 /* =========================
+   MOBILE MENU BUTTON
+========================= */
+
+.menu-toggle {
+  display: none;
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 28px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+/* =========================
    HERO
 ========================= */
 
@@ -313,8 +328,37 @@ select {
     padding: 0 5%;
   }
 
+  /* Mobile menu button visible */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Mobile navigation */
   .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
     display: none;
+    flex-direction: column;
+    gap: 0;
+    padding: 10px 5%;
+    background: #171922;
+    border-bottom: 1px solid #292c38;
+  }
+
+  .nav-links.mobile-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 14px 0;
+    border-bottom: 1px solid #292c38;
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
   }
 
   .hero {
@@ -365,6 +409,10 @@ select {
 
   .logo {
     font-size: 19px;
+  }
+
+  .nav-links {
+    top: 65px;
   }
 
   .hero {
